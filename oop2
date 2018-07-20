@@ -1,0 +1,32 @@
+from abc import ABC , abstractmethod
+
+class Animal(ABC):
+
+    @abstractmethod
+    def move(self):
+        print("All are Moving")
+
+
+
+
+class Dog(Animal):
+
+    def move(self):
+        print("Dog Is moving")
+
+class Snake(Animal):
+
+    def move(self):
+        print("Snake is crawling")
+
+
+d = Dog()
+d.move()
+
+s = Snake()
+s.move()
+
+a = Animal()
+a.move()
+
+
